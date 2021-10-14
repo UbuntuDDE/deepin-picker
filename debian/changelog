@@ -1,5 +1,5 @@
-deepin-picker (1.0.0-1) unstable; urgency=medium
+deepin-picker (5.0.23-1ubuntu1) impish; urgency=medium
 
-  * Initial Release.
+  * New upstream release for impish. 
 
- -- Deepin Packages Builder <packages@deepin.com>  Wed, 11 Oct 2017 17:38:35 +0800
+ -- Ananta Mishra <mishraananta2017@gmail.com>  Thu, 14 Oct 2021 17:26:14 +0545

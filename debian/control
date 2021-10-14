@@ -1,29 +1,36 @@
 Source: deepin-picker
 Section: utils
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
-Build-Depends: 
- debhelper (>= 9),
+Maintainer: Ananta Mishra <mishraananta2017@gmail.com>
+XSBC-Original-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ libdtkgui-dev(>=5.5~),
+ libdtkwidget-dev(>=5.5~),
+ libqt5svg5-dev,
+ libxcb-util0-dev,
+ libxtst-dev,
  pkg-config,
  qt5-qmake,
- libxcb-util0-dev,
- libdtkgui-dev,
- libdtkwidget-dev,
  qttools5-dev-tools,
- libqt5svg5-dev,
- libxtst-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.5.1
 Homepage: http://www.deepin.org
 
 Package: deepin-picker
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, deepin-picker-cli( =${binary:Version})
+Depends:
+ deepin-picker-cli( =${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Color picker tool for deepin
  A color picker tool for deepin.
 
 Package: deepin-picker-cli
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: deepin-picker(<<5.0.5)
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Conflicts:
+ deepin-picker(<<5.0.5),
 Description: Color picker tool for deepin
  A color picker tool for deepin.
